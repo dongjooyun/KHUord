@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- bootstrap -->
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap-theme.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 제이쿼리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title>KHUord_Guitar Code Practice</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand mt-1" href="/" style="font-family: Georgia"><h1>KHUord</h1></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-3">
+          <li class="nav-item">
+            <a class="nav-link" href="home" style="font-family: 'Spoqa Han Sans Neo'">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family: 'Spoqa Han Sans Neo'">
+              Test
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item small" href="camera" style="font-family: 'Spoqa Han Sans Neo'">Camera</a>
+              <a class="dropdown-item small" href="sound" style="font-family: 'Spoqa Han Sans Neo'">Sound</a>
+              <a class="dropdown-item small" href="practice" style="font-family: 'Spoqa Han Sans Neo'">Practice</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="carousel" style="font-family: 'Spoqa Han Sans Neo'">Credits</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+        <div class="mt-5 row d-flex justify-content-center">
+            <div class="mx-auto p-3 mb-4 col-md-offset-1 col-md-11 bg-white rounded shadow">
+                <h2 class="ml-2 mt-1 text-dark" style="font-family: 'Spoqa Han Sans Neo'">Chord practice</h2>
+            </div>
+            <div class="col-md-offset-1 col-md-offset-10 d-flex text-center">
+                <span class="rounded mb-5">
+                    <img src="{{ url_for('camera') }}" width="1000px" alt="video" class="rounded img-fluid">
+                </span>
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </div>
+    <footer class="text-center text-white fixed-bottom bg-dark">
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-4 bg-dark">
+        <small class="text-white" style="font-family: 'Spoqa Han Sans Neo'">ⓒ 2022 <a href="https://github.com/dongjooyun">Dongjoo Yun</a>. All rights reserved.</small>
+      </div>
+      <!-- Copyright -->
+    </footer>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- bootstrap -->
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap-theme.min.css">
+
+    <!-- 제이쿼리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title>KHUord_Guitar Code Practice</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand mt-1" href="/" style="font-family: Georgia"><h1>KHUord</h1></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-3">
+          <li class="nav-item">
+            <a class="nav-link" href="home" style="font-family: 'Spoqa Han Sans Neo'">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family: 'Spoqa Han Sans Neo'">
+              Test
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item small" href="camera" style="font-family: 'Spoqa Han Sans Neo'">Camera</a>
+              <a class="dropdown-item small" href="sound" style="font-family: 'Spoqa Han Sans Neo'">Sound</a>
+              <a class="dropdown-item small" href="practice" style="font-family: 'Spoqa Han Sans Neo'">Practice</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="carousel" style="font-family: 'Spoqa Han Sans Neo'">Credits</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="justify-content-center mt-5 ml-5">
+        <input type="file" id="fileA">
+            <audio autoplay id="chordA">
+                <script>
+                    let input = document.querySelector("#fileA");
+                    let audio = document.querySelector("#chordA");
+                    input.onchange = function() {
+                        audio.src = URL.createObjectURL(input.files[0]);
+                    }
+                </script>
+            </audio>
+
+        <input type="file" id="fileB">
+            <audio autoplay id="chordB">
+                <script>
+                    let input1 = document.querySelector("#fileB");
+                    let audio1 = document.querySelector("#chordB");
+                    input1.onchange = function() {
+                        audio1.src = URL.createObjectURL(input1.files[0]);
+                    }
+                </script>
+            </audio>
+
+        <input type="file" id="fileC">
+            <audio autoplay id="chordC">
+                <script>
+                    let input2 = document.querySelector("#fileC");
+                    let audio2 = document.querySelector("#chordC");
+                    input2.onchange = function() {
+                        audio2.src = URL.createObjectURL(input2.files[0]);
+                    }
+                </script>
+            </audio>
+
+        <input type="file" id="fileD">
+            <audio autoplay id="chordD">
+                <script>
+                    let input3 = document.querySelector("#fileD");
+                    let audio3 = document.querySelector("#chordD");
+                    input3.onchange = function() {
+                        audio3.src = URL.createObjectURL(input3.files[0]);
+                    }
+                </script>
+            </audio>
+
+        <input type="file" id="fileE">
+            <audio autoplay id="chordE">
+                <script>
+                    let input4 = document.querySelector("#fileE");
+                    let audio4 = document.querySelector("#chordE");
+                    input4.onchange = function() {
+                        audio4.src = URL.createObjectURL(input4.files[0]);
+                    }
+                </script>
+            </audio>
+    </div>
+
+
+    {#      <source src="/acoustic-guitar-a-major-chord.mp3" type="audio/mpeg">#}
+
+{#        <div class="col-sm-4 col-sm-offset-4 embed-responsive embed-responsive-4by3">#}
+{#          <audio controls class="embed-responsive-item">#}
+{#          <source src="/sound/acoustic-guitar-a-major-chord.mp3">#}
+{#          </audio>#}
+{#        </div>#}
+
+    <footer class="text-center text-white fixed-bottom bg-dark">
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-4 bg-dark">
+        <small class="text-white" style="font-family: 'Spoqa Han Sans Neo'">ⓒ 2022 <a href="https://github.com/dongjooyun">Dongjoo Yun</a>. All rights reserved.</small>
+      </div>
+      <!-- Copyright -->
+    </footer>
+</body>
+</html>
