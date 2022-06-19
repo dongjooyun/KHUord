@@ -63,9 +63,8 @@ def camera():
 
 @app.route('/sound')
 def sound():
-    # Response(serial_start())
-    # serial_start()
-    return Response(serial_start())
+    # return Response(serial_start())
+    return serial_start()
     # return render_template('sound.html')
 
 @app.route('/practice')

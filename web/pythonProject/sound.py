@@ -1,8 +1,6 @@
 import serial
 from playsound import playsound
 
-ser_val_list = []
-
 
 def serial_start():
     ser = serial.Serial('com5', 115200)
@@ -11,13 +9,16 @@ def serial_start():
         if ser.readable():
             res = ser.readline()
             res_decode = res.decode()
-            # print(res_decode)
+            print(res_decode)
             play_chord(res_decode)
 
 
 def play_chord(res_decode):
+    sound_played = True
     if res_decode == 'G\r\n':
-        playsound('./sound//acoustic-guitar-g.mp3')
+        if sound_played:
+            playsound('./sound//acoustic-guitar-g.mp3')
+            sound_played = False
     elif res_decode == 'A\r\n':
         playsound('./sound/acoustic-guitar-a.mp3')
     elif res_decode == 'C\r\n':
